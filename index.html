@@ -37,6 +37,14 @@ Your choice  of shrimp or pork
 </div>
 </div>
 
+
+<div>
+<img src="whiterice.jpeg">
+<div>
+បាយស | White rice
+</div>
+</div>
+
 </div>
 
 
@@ -79,10 +87,170 @@ A traditional Cambodian soup made with tamarind
 <h3>ការី | Curry</h3>
 <div class="container">
 
+<div>
+<img src="greencurry.png">
+<div>
+ការីខៀវសាច់មាន់ | Green curry with chicken
+</div>
+</div>
+
+<div>
+<img src="redcurry.jpg">
+<div>
+ការីក្រហមសាច់មាន់-ឆ្អឹងជំនីជ្រូក | Red curry with chicken or pork ribs
+</div>
+</div>
+
+</div>
+
+<h3>ឆា | Stir-fry</h3>
+<div class="container">
+
+<div>
+<img src="gingerstirfry.png">
+<div>
+ឆាខ្ញីសាច់ជ្រូក-គោ-មាន់ | Ginger stir-fry
+</div>
+<div>
+Your choice of pork, beef, or chicken
+</div>
+</div>
+
+<div>
+<img src="basilstirfry.jpg">
+<div>
+ឆាម្រះព្រៅគ្រឿងសមុទ្រ | Spicy seafood stir-fry
+</div>
+<div>
+Made with shrimp, calamari, and holy basil
+</div>
+</div>
+
+<div>
+<img src="beefmushroom.jpg">
+<div>
+ឆាផ្សិតសាច់គោ | Beef and mushroom stir fry
+</div>
+</div>
+
+<div>
+<img src="chatrakuon.jpg">
+<div>
+ឆាត្រកួនប្រេងខ្យង | Stir-fried water spinach with oyster sauce
+</div>
+<div>
+Also known as morning glory
+</div>
+</div>
+
+<div>
+<img src="bokchoy.jpeg">
+<div>
+ឆាស្ពៃតឿប្រេងខ្យង | Stir-fried bok choy with oyster sauce
+</div>
+</div>
+
+<div>
+<img src="mixedveg.jpg">
+<div>
+ឆាបន្លែគ្រប់មុខ | Mixed vegetable stir fry
+</div>
+</div>
+
+<div>
+<img src="spicychicken.jpg">
+<div>
+ឆាក្តៅសាច់មាន់ | Spicy chicken stir fry
+</div>
+</div>
+
+
+</div>
+
+<h3>បាយឆា | Fried rice</h3>
+<div class="container">
+
+<div>
+<img src="vegetablefriedrice.jpg">
+<div>
+បាយឆាបន្លែ | Vegetable fried rice
+</div>
+</div>
+
+<div>
+<img src="shrimpfriedrice.jpeg">
+<div>
+បាយឆាគ្រឿងសមុទ្រ | Shrimp fried rice
+</div>
+</div>
+
+<div>
+<img src="holybasilfriedrice.jpg">
+<div>
+បាយឆាម្រះព្រៅ | Holy basil fried rice
+</div>
+</div>
+
+</div>
+
+<h3>មុខម្ហូបពិសេស | Specials</h3>
+
+<div class="container">
+
+<div>
+<img src="loklak.jpg">
+<div>
+ឡុកឡាក់ | Lok lak
+</div>
+<div>
+Diced beef fried with pepper and onion
+</div>
+</div>
+
+<div>
+<img src="padkrapaw.jpg">
+<div>
+ផាត់កាផៅ | Pad krapow
+</div>
+<div>
+Stir-fried minced chicken and holy basil
+</div>
+</div>
+
+<div>
+<img src="micha.jpeg">
+<div>
+មីឆាសាច់គោ | Mi cha
+</div>
+<div>
+Fried noodles with beef
+</div>
+</div>
+
 </div>
 
 <style>
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
+
+.container > * {
+    max-width: 2in;
+    flex-grow: 1;
+}
+
+.container > * > * {
+  max-width: 100%; /* Ensures all child elements don't exceed their parent */
+  box-sizing: border-box;
+}
+
+/* Add this for images specifically */
+.container > * > img {
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  width: 100%; /* Ensures the image fills its container width */
+  height: auto; /* This will be overridden by aspect-ratio */
+}
+
 </style>
